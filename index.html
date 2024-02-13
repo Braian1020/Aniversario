@@ -1,164 +1,47 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta name="viewport" content="width=device-width,user-scalable=no">
-    <meta name="author" content="ShaoZeMing,szm19920426@gmail.com beijing">
-
-    <meta http-equiv="Cache-Control" content="no-siteapp" />
-
-    <!--Hola sin ZOOM-->
-    <link rel="apple-touch-icon-precomposed" href="./public/1.png">
-    <meta name="format-detection" content="telephone=no">
-    <title>Feliz Dia Mi amor 13/10/20</title>
-    <style type="text/css">
-        body {
-            text-align: center;
-            margin: 0px;
-            padding: 0px;
-            font-size: 25px;
-            color: #FFF;
-            font-family: "微软雅黑";
-            background: #16ff01;
-        }
-        div {
-            text-align: left;
-        }
-        .tittle {
-            width: 100%;
-            background: #ff0000;
-            top: 0px;
-            height: 100%;
-            z-index: 0;
-            position: absolute;
-            position: fixed !important;
-            display: none;
-            cursor: default;
-        }
-
-        .big {
-            font-family: "微软雅黑";
-            color: #FFF;
-            font-size: 35px;
-        }
-        .tishi {
-            position: absolute;
-            position: fixed !important;
-            z-index: 99;
-            bottom: 10px;
-            width: 100%;
-            text-align: center;
-        }
-        .tishiContent {
-            border: 1px solid #FFF;
-            font-size: 18px;
-            padding: 5px;
-            cursor: pointer;
-            border-radius: 5px;
-        }
-    </style>
-    <script type="text/javascript" src="./jscss/jquery.min.js"></script>
-    <script>
-        $(document).ready(function (e) {
-            $(document).scrollTop(300);
-            /*Mover la barra de desplazamiento hacia abajo*/
-            timer = setInterval("$.change()", 3000);
-            t = 2;
-            $("#t-" + t).fadeIn();
-            $(document).click(
-                    function () {
-                        /*Cancelar la reproducción automática si el usuario hace clic*/
-                        clearInterval(timer);
-                        $.change();
-                    }
-            );
-
-            /*palanca*/
-            $.change = function () {
-                t++;
-                if (t <= $(".tittle").length) {
-                    $(".tittle").slideUp(1500).fadeOut();
-                    $("#t-" + t).slideDown(1500).fadeIn();
-                } else {
-                    localStorage["index"] = "1";
-                    window.location = "index2.html";
-                }
-            }
-        });
-    </script>
-
+    <meta charset="UTF-8">
+    <title>小孙同学</title>
+    <meta name="language" content="zh-CN">
+    <meta name="title" content="小孙同学">
+    <meta name="github" content="https://github.com/sun0225SUN/Awesome-Love-Code">
+    <meta name="describe" content="收集不易，您的star是我坚持的动力，同时也欢迎各位PR哦! ">
+    <link rel="icon" type="image/x-icon" href="https://cdn.jsdelivr.net/gh/sun0225SUN/photos/img/20210715233345.png">
+    <link rel="stylesheet" href="css/love.css">
 </head>
 
 <body>
-<section style="text-align: center">
-    <div class="tittle" id="t-1" style="display: none;">
-        <table width="100%" border="0" height="100%">
-            <tbody>
-            <tr>
-                <td align="center"><span class="big">sistema de confesiones</span>inicializando</td>
-            </tr>
-            </tbody>
-        </table>
+
+    <audio autoplay="autopaly" loop="loop" id="audios" preload="auto">
+        <source src="MP3/loco.mp3"/>
+    </audio>
+
+    <div class="container" onselectstart="return false;" unselectable="on" style="-moz-user-select:none;">
+
+        <div class="body_left">
+            <img src="images/biubiubiu.gif" alt="" ondragstart='return false;'>
+        </div>
+
+        <div class="body_center love">
+            <div class="block">
+                <div class="div1"></div>
+                <div class="div2"></div>
+                <div class="div3"></div>
+                <div class="div4"></div>
+            </div>
+        </div>
     </div>
 
-    <div class="tittle" id="t-2" style="display: block;">
-        <table width="100%" border="0" height="100%">
-            <tbody>
-            <tr>
-                <td align="center"><span class="big">Feliz 1 Año y Quinto mes mi Amor</span> </td>
-            </tr>
-            </tbody>
-        </table>
+    <div class="footer">
+        <div class="border">
+            <div class="border-top"></div>
+            <div class="border-bottom"></div>
+        </div>
     </div>
 
-    <div class="tittle" id="t-3" style="">
-        <table width="100%" border="0" height="100%">
-            <tbody>
-            <tr>
-                <td align="center">!BEBE¡<span class="big">Mi corazón te amára , Hasta el Ultimo latido</span>
-                    
-            
-            </td>
-            </tr>
-            </tbody>
-        </table>
-    </div>
-   <div class="tittle" id="t-4" style="">
-        <table width="100%" border="0" height="100%">
-            <tbody>
-            <tr>
-                <td align="center">Quiero Decirte  <span class="big">Algo muy Importante</span></td>
-            </tr>
-            </tbody>
-        </table>
-    </div>
+    <script type="text/javascript" src="js/love.js"></script>
 
-
-    <div class="tittle" id="t-5" style="">
-        <table width="100%" border="0" height="100%">
-            <tbody>
-            <tr>
-                <td align="center"><br>
-                    <span class="big"> El arte de amar no se enseña en las escuelas, yo lo aprendí de ti y trato de mejorarlo cada día</span>
-                </td>
-            </tr>
-            </tbody>
-        </table>
-    </div>
-
-    <div class="tittle" id="t-6" style="">
-        <table width="100%" border="0" height="100%">
-            <tbody>
-            <tr>
-                <td align="center"><br>Sin ti a mi lado todo pierde sentido. <span>Me gustaría compartir contigo cada soplo de aire, cada segundo de experiencia y toda la nostalgia que cabe en un recuerdo.</span> </td>
-            </tr>
-            </tbody>
-        </table>
-    </div>
-
-</section>
-<div align="center" class="tishi">
-    <span class="tishiContent">Toca la pantalla para continuar</span>
-</div>
 </body>
+
 </html>
